@@ -80,7 +80,7 @@
 							<p>
 								<ul>
 									<li>Decoupling back-end from front-end</li>
-									<li class="fragment fade-up">Using <strong>WordPress</strong> just to fetch data</li>
+									<li class="fragment fade-up">Using <strong>WordPress</strong> just to serve data</li>
 									<li class="fragment fade-up">Using this data we can do whatever we want with it</li>
 								</ul>
 							</p>
@@ -365,8 +365,8 @@ import Article from '../components/Article.astro';
 ...
 const data = res.json();
 ---
-<h1>Articles archive</h1>
 <div>
+	<h1>Articles archive</h1>
 	<ul>
 	{data.map(post => &lt;Article post={post}/>)}
 	</ul>
